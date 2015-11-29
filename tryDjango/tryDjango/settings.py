@@ -48,10 +48,12 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.security.SecurityMiddleware',
+    # 'django.middleware.security.SecurityMiddleware',
 )
 
 ROOT_URLCONF = 'tryDjango.urls'
+
+TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'static', 'templates'),)
 
 TEMPLATES = [
     {
